@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Oriana Fawkes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">🎲 Dice Survey 🎲</h1>
+    <p id="description">Thank you for taking the time to fill up this form!</p>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label id="name-label" for="name" class="subheading">Full Name</label>
+        <input id="name" type="text" placeholder="Please enter your full name (e.g. Oriana Fawkes)" required />
+      </fieldset>
+      <fieldset>
+        <label id="email-label" for="email" class="subheading">Email</label>
+        <input id="email" type="email" placeholder="Please enter your email (e.g. ori@email.com)" required />
+      </fieldset>
+      <fieldset>
+        <label id="number-label" for="number" class="subheading">Age (Optional)</label>
+        <input id="number" type="number" placeholder="Please enter your age" min="1" max="200" />
+      </fieldset>
+      <fieldset>
+        <label for="dropdown" class="subheading">Favorite Dice Game</label>
+        <select id="dropdown">
+          <option value="1">Yahtzee</option>
+          <option value="2">Backgammon</option>
+          <option value="3">Liar's Dice</option>
+          <option value="4">Zombie Dice</option>
+          <option value="5">Dungeons & Dragons</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label class="subheading">Most Common Roll (With a D6 die)</label>
+        <label for="dice-face-1" class="item">
+          <input id="dice-face-1" value="dice-face-1" type="radio" name="dice-face" class="inline" />
+          Die Face 1 (⚀)
+        </label>
+        <label for="dice-face-2" class="item">
+          <input id="dice-face-2" value="dice-face-2" type="radio" name="dice-face" class="inline" />
+          Die Face 2 (⚁)
+        </label>
+        <label for="dice-face-3" class="item">
+          <input id="dice-face-3" value="dice-face-3" type="radio" name="dice-face" class="inline" />
+          Die Face 3 (⚂)
+        </label>
+        <label for="dice-face-4" class="item">
+          <input id="dice-face-4" value="dice-face-4" type="radio" name="dice-face" class="inline" />
+          Die Face 4 (⚃)
+        </label>
+        <label for="dice-face-5" class="item">
+          <input id="dice-face-5" value="dice-face-5" type="radio" name="dice-face" class="inline" />
+          Die Face 5 (⚄)
+        </label>
+        <label for="dice-face-6" class="item">
+          <input id="dice-face-6" value="dice-face-6" type="radio" name="dice-face" class="inline" />
+          Die Face 6 (⚅)
+        </label>
+      </fieldset>
+      <fieldset>
+        <label class="subheading">Favorite Die Shape</label>
+        <label for="d4" class="item">
+          <input type="checkbox" id="d4" name="d4" value="d4" class="inline" />
+          D4 (Pyramid shaped)
+        </label>
+        <label for="d6" class="item">
+          <input type="checkbox" id="d6" name="d6" value="d6" class="inline" />
+          D6 (Cube shaped)
+        </label>
+        <label for="d8" class="item">
+          <input type="checkbox" id="d8" name="d8" value="d8" class="inline" />
+          D8 (Conical shaped)
+        </label>
+        <label for="d10" class="item">
+          <input type="checkbox" id="d10" name="d10" value="d10" class="inline" />
+          D10 (UFO shaped)
+        </label>
+        <label for="d12" class="item">
+          <input type="checkbox" id="d12" name="d12" value="d12" class="inline" />
+          D12 (Football shaped)
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="comments" class="subheading">Share your thoughts</label>
+        <textarea id="comments" for="comments" rows="6" placeholder="Any insightful tips or memorable experiences?"></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
