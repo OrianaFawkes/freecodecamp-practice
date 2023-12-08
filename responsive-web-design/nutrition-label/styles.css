@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #faeee7;
+  color: #33272a;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.label {
+  background-color: #ffc6c7;
+  border: 2px solid #33272a;
+  margin: 20px auto;
+  padding: 0 7px;
+  width: 270px;
+}
+
+header h1 {
+  letter-spacing: 0.15px;
+  margin: -4px 0;
+  text-align: center;
+}
+
+p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.divider {
+  border-bottom: 1px solid #594a4e;
+  margin: 2px 0;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.large {
+  height: 10px;
+}
+
+.large, .medium {
+  background-color: #33272a;
+  border: 0;
+}
+
+.medium {
+  height: 5px;
+}
+
+.small-text {
+  font-size: 0.85rem;
+}
+
+.calories-info {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calories-info h2 {
+  margin: 0;
+}
+
+.left-container p {
+  font-size: 2em;
+  font-weight: 700;
+  margin: -5px -2px;
+}
+
+.calories-info span {
+  font-size: 2.4em;
+  font-weight: 700;
+  margin: -7px -2px;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.indent {
+  margin-left: 1em;
+}
+
+.double-indent {
+  margin-left: 2em;
+}
+
+.indent, .double-indent {
+  color: #594a4e;
+}
+
+.daily-value p:not(.no-divider) {
+  border-bottom: 1px solid #33272a;
+}
+
+.note {
+  color: #594a4e;
+  font-size: 0.5rem;
+  margin: 5px 0;
+  padding: 0 8px;
+  text-indent: -8px;
+}
