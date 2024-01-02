@@ -17,6 +17,11 @@ Welcome Nappers! This place is just a tiny spot I made to drop all my small proj
 - **Project 5:** Personal Portfolio Webpage (WIP)
 - *Favorite Practice Challenges:* [Nutrition Label](/responsive-web-design/nutrition-label/)
 
+### Scientific Computing with Python (Beta)
+
+- **Project 1:** [Vigenere Cipher](/scientific-computing-with-python/VigenereCipher.py)
+- **Project 2:** [Luhn Algorithm](/scientific-computing-with-python/LuhnAlgorithm.py)
+
 ###### *More coming soon~*
 
 ## Notes
