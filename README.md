@@ -22,6 +22,7 @@ Welcome Nappers! This place is just a tiny spot I made to drop all my small proj
 - **Practice 1:** [Vigenere Cipher](/scientific-computing-with-python/VigenereCipher.py)
 - **Practice 2:** [Luhn Algorithm](/scientific-computing-with-python/LuhnAlgorithm.py)
 - **Practice 3:** [Expense Tracker](/scientific-computing-with-python/ExpenseTracker.py)
+- **Practice 4:** [Case Converter](/scientific-computing-with-python/CaseConverter.py)
 
 ###### *More coming soon~*
 
