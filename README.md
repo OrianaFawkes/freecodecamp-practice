@@ -24,6 +24,7 @@ Welcome Nappers! This place is just a tiny spot I made to drop all my small proj
 - **Practice 3:** [Expense Tracker](/scientific-computing-with-python/ExpenseTracker.py)
 - **Practice 4:** [Case Converter](/scientific-computing-with-python/CaseConverter.py)
 - **Practice 5:** [Password Generator](/scientific-computing-with-python/PasswordGenerator.py)
+- **Practice 6:** [Shortest Path Algorithm](/scientific-computing-with-python/ShortestPathAlgorithm.py)
 
 ###### *More coming soon~*
 
