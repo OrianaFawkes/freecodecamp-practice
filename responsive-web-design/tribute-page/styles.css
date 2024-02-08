@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #dedcdc;
+  color: #191d23;
+  font-family: 'Open Sans', sans-serif
+}
+
+header {
+  padding: 1rem 0;
+}
+
+h1 {
+  font-family: Bree Serif;
+  font-size: 2rem;
+  
+}
+
+header p {
+  font-family: Kameron;
+  font-size: 0.875rem;
+}
+
+h1, header p {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#img-div {
+  width: 100%;
+  background-color: #c5bac4;
+  color: #57707a;
+}
+
+img {
+  display: block;
+}
+
+#image {
+  padding: 16px;
+  border-radius: 32px;
+  margin: 0 auto;
+  height: auto;
+  max-height: 80vh;
+  max-width: 100%;
+}
+
+a {
+  color: #57707a;
+}
+
+#img-caption {
+  padding: 0 16px 16px;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+#img-caption, #tribute-info {
+  font-family: Kameron;
+}
+
+#tribute-details {
+  width: 100%;
+  padding: 24px 24px 48px;
+}
+
+#tribute-info {
+  margin-bottom: 1rem;
+}
+
+#tribute-info, #tribute-link {
+  font-size: 1.1487rem;
+}
