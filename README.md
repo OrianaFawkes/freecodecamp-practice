@@ -11,8 +11,8 @@ Welcome Nappers! This place is just a tiny spot I made to drop all my small proj
 ### Responsive Web Design
 
 - **Project 1:** [Survey Form](/responsive-web-design/survey-form/)
-- **Project 2:** [Tribute Page](/responsive-web-design/survey-form/)
-- **Project 3:** Technical Documentation Page (WIP)
+- **Project 2:** [Tribute Page](/responsive-web-design/tribute-page/)
+- **Project 3:** [Technical Documentation Page](/responsive-web-design/technical-documentation-page/)
 - **Project 4:** Product Landing Page (WIP)
 - **Project 5:** Personal Portfolio Webpage (WIP)
 - *Favorite Practice Challenges:* [Nutrition Label](/responsive-web-design/nutrition-label/)
