@@ -2,8 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="author" content="Oriana Fawkes" />
+    <title>SOL Compiler Design Documentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav id="navbar">
@@ -17,8 +25,8 @@
     </nav>
     <main id="main-doc">
       <section class="main-section" id="Some_Outerspace_Language">
-        <header>Some Outerspace Language</header>
-        <p>Some Outerspace Language (SOL) is a simple imperative programming language patterned to Java. The language makes use of references about astronomical words such as Big Bang, Orbits, Supernova, etc. In partial fulfillment of the requirements for my Compiler Design course, my group and I made this language along with its compiler written in Java.</p>
+        <header>S.O.L.</header>
+        <p>Some Outerspace Language (S.O.L.) is a simple imperative programming language patterned to Java. The language makes use of references about astronomical words such as Big Bang, Orbits, Supernova, etc. In partial fulfillment of the requirements for my Compiler Design course, my group and I made this language along with its compiler written in Java.</p>
         <p>Project Phases</p>
         <ol>
           <li>Programming Language Design</li>
@@ -30,33 +38,212 @@
       </section>
       <section class="main-section" id="Language_Design">
         <header>Language Design</header>
-        <p>Topic Content 1</p>
-        <p>Topic Content 2</p>
-        <code>code</code>
+        <h3>Character Set and Case Sensitivity</h3>
+        <p>The character set makes use of the English alphabet, digits, and some special character symbols and the language is case sensitive.</p>
+        <h3>Statements</h3>
+        <ol>
+          <li>Input Statements
+            <p>Input statements are obtained from the users via command line, the reserved word scan is used to ask for the input.</p>
+            <div class="code-block"><code>create string str1 = scan;</code></div>
+          </li>
+          <li>Output Statements
+            <p>To display the output, the reserved word flare is used, followed by the variable name of what the user wants to display.</p>
+            <div class="code-block"><code>create string str1 = "hello";<br>flare str1;</code></div>
+          </li>
+          <li>Assignment Statements
+            <p>In order to assign values to a variable, the right side of the equation involves <code>create</code> which indicates the creation of the variable, followed by the variable type. Then, the assignment operator denoted by the single equal sign <code>=</code> followed by the value of the variable name.</p>
+            <div class="code-block"><code>create integer age = 18;</code></div>
+          </li>
+          <li>Conditional Statements
+            <p>To implement if/else statements, it starts with a <code>neutronStar</code> which is the if statement followed by <code>blackHole</code> which if the condition is met, the program will run as needed. Decisions are made if and only if the pre-stated conditions are either true or false.</p>
+            <div class="code-block"><code>create integer age = 20;<br>
+              supernova {<br>
+              &#160;&#160;neutronStar (age > 18) {<br>
+              &#160;&#160;&#160;&#160;flare "Age is greater than 18.";<br>
+              &#160;&#160;}<br>
+              &#160;&#160;blackHole {<br>
+              &#160;&#160;&#160;&#160;flare "Age is less than 18.";<br>
+              &#160;&#160;}<br>
+              }</code></div>
+          </li>
+          <li>Looping Constructs
+            <p>S.O.L. supports the looping constructs for loop and while-loop. <code>orbitFor</code> is the indicator for for loops and <code>orbitWhile</code> is the indicator for the while loop.</p>
+            <div class="code-block"><code>orbitFor (create integer i = 0; i < 10; ++i) {<br>
+              &#160;&#160;flare i;<br>
+              }</code></div>
+          </li>
+          <li>Concatenations
+            <p>To concatenate variables such as integers and strings, the tilde <code>~</code> symbol is used.</p>
+            <div class="code-block"><code> create string string1 = "Hello";<br>
+              create string string2 = "!";<br>
+              flare string1 ~ string2;</code></div>
+          </li>
+        </ol>
+        <h3>Programming Language Limitations</h3>
+        <p>S.O.L. is a simple imperative programming language and is presented with some limitations:</p>
+        <ul>
+          <li>No "break from loop" expression</li>
+          <li>No character data type</li>
+          <li>No modulo support</li>
+          <li>No float data type, the data types for numeric values are limited to integers only</li>
+          <li>No "else if" statement included for the conditional statements</li>
+          <li>No multi-line comments</li>
+        </ul>
       </section>
       <section class="main-section" id="Lexical_Analyzer">
         <header>Lexical Analyzer</header>
-        <p>Topic Content 1</p>
-        <p>Topic Content 2</p>
-        <code>code</code>
+        <h3>Tokens used by the Lexical Analyzer (Scanner)</h3>
+        <p>Reserved Words</p>
+        <ul>
+          <li>BIGBANG</li>
+          <li>HEATDEATH</li>
+          <li>SUPERNOVA</li>
+          <li>NEUTRONSTAR</li>
+          <li>BLACKHOLE</li>
+          <li>ORBITFOR</li>
+          <li>ORBITWHILE</li>
+          <li>SCAN</li>
+          <li>FLARE</li>
+          <li>CREATE</li>
+          <li>INTEGER</li>
+          <li>STRING</li>
+          <li>BOOLEAN</li>
+          <li>TRUE</li>
+          <li>FALSE</li>
+          <li>AND</li>
+          <li>OR</li>
+        </ul>
+        <p>Other Tokens</p>
+        <ul>
+          <li>RELOP</li>
+          <li>NOT</li>
+          <li>EXPONENT</li>
+          <li>MULTIPLY</li>
+          <li>DIVIDE</li>
+          <li>PLUS</li>
+          <li>MINUS</li>
+          <li>CONCATOP</li>
+          <li>ASSIGNOP</li>
+          <li>INTNUM</li>
+          <li>STRINGLIT</li>
+          <li>IDENTIFIER</li>
+          <li>OPENPAREN</li>
+          <li>CLOSEPAREN</li>
+          <li>OPENCURLY</li>
+          <li>CLOSECURLY</li>
+          <li>SEMICOLON</li>
+          <li>EOF</li>
+        </ul>
       </section>
       <section class="main-section" id="Parser">
         <header>Parser</header>
-        <p>Topic Content 1</p>
-        <p>Topic Content 2</p>
-        <code>code</code>
+        <h3>Parsing Method</h3>
+        <p>The parsing method used in this project is the bottom up parser LALR(1).</p>
+        <h3>Parser Features</h3>
+        <ol>
+          <li>When the parser encounters an error, it halts and then it outputs the line number and column number of the error</li>
+          <li>The parser is able to detect the following errors:
+            <ol type="a">
+              <li>It is able to detect any unexpected tokens</li>
+              <li>It is able to detect if the variable used has not yet been declared</li>
+              <li>It is able to detect if a variable is being declared again</li>
+              <li>When assigning a value to a variable, it can detect whether the type of the value that is going to be assigned matches the type of the variable</li>
+            </ol>
+          </li>
+        </ol>
       </section>
       <section class="main-section" id="Interpreter">
         <header>Interpreter</header>
-        <p>Topic Content 1</p>
-        <p>Topic Content 2</p>
-        <code>code</code>
+        <h3>Semantic Rules checked by Interpreter</h3>
+        <ol>
+          <li>Declaring an identifier again</li>
+          <li>Accessing an identifier that hasn't been declared yet</li>
+          <li>Mismatched types in assignment</li>
+        </ol>
+        <h3>Run-time Checking</h3>
+        <ol>
+          <li>Division by zero</li>
+          <li>Integer number out of range</li>
+          <li>Mismatched types in input</li>
+          <li>Assigning an identifier that hasn't been initialized with a value yet
+            <ol type="a">
+              <li><code>integer num1 = num1</code></li>
+            </ol>
+          </li>
+          
+        </ol>
+        <h3>Language Constructs</h3>
+        <ol>
+          <li>Program "Start" and "End" keywords (<code>bigBang</code>, <code>heatDeath</code>)</li>
+          <li>Assignment statements
+            <ol type="a">
+              <li>Integer assignment</li>
+              <li>Boolean assignment</li>
+              <li>String assignment</li>
+            </ol>
+          </li>
+          <li>Conditional statement (<code>supernova</code> - <code>neutronStar</code> - <code>blackHole</code>)</li>
+          <li>While-loop statement (<code>orbitWhile</code>)</li>
+          <li>For-loop statement (<code>orbitFor</code>)</li>
+          <li>Scan statement (<code>scan</code>)</li>
+          <li>Print statement (<code>flare</code>)</li>
+          <li>Increment statement</li>
+          <li>Decrement statement</li>
+          <li>Convert to string (<code>toString()</code>)</li>
+          <li>Expressions
+            <ol type="a">
+              <li>Conditional expression</li>
+              <li>Arithmetic expression</li>
+              <li>String expression</li>
+            </ol>
+          </li>
+        </ol>
       </section>
-      <section class="main-section" id="#Sample_Codes">
+      <section class="main-section" id="Sample_Codes">
         <header>Sample Codes</header>
-        <p>Topic Content 1</p>
-        <p>Topic Content 2</p>
-        <code>code</code>
+        <h3>Multiplication Table written in SOL</h3>
+        <div class="code-block"><code>bigBang;<br>
+          &#160;&#160;integer product = 0;<br>
+          &#160;&#160;integer x = scan;<br>
+          &#160;&#160;integer y = scan;<br>
+          &#160;&#160;orbitFor (integer i=1; i&lt;=x; i++){<br>
+          &#160;&#160;&#160;&#160;product = 0;<br>
+          &#160;&#160;&#160;&#160;orbitFor (integer j=1; j&lt;=y; j++){<br>
+          &#160;&#160;&#160;&#160;&#160;&#160;orbitFor (integer k=0; k&lt;i; k++){<br>
+          &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;product++;<br>
+          &#160;&#160;&#160;&#160;&#160;&#160;}<br>
+          &#160;&#160;&#160;&#160;&#160;&#160;flare toString(product)~"\t";<br>
+          &#160;&#160;&#160;&#160;}<br>
+          &#160;&#160;&#160;&#160;flare "\n";<br>
+          &#160;&#160;}<br>
+          heatDeath;
+        </code></div>
+        <h3>GCD Calculator written in SOL</h3>
+        <div class="code-block"><code>bigBang;<br>
+          integer num1 = scan;<br>
+          integer num2 = scan;<br>
+          integer gcd = 0;<br>
+          supernova{<br>
+          &#160;&#160;neutronStar(num1 == 0){<br>
+          &#160;&#160;&#160;&#160;gcd = num2;<br>
+          &#160;&#160;}<br>
+          &#160;&#160;blackHole{<br>
+          &#160;&#160;&#160;&#160;orbitWhile(num2 != 0){<br>
+          &#160;&#160;&#160;&#160;&#160;&#160;supernova{<br>
+          &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;neutronStar(num1 > num2){<br>
+          &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;num1 = num1-num2;<br>
+          &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br>
+          &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;blackHole{<br>
+          &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;num2 = num2-num1;<br>
+          &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br>
+          &#160;&#160;&#160;&#160;&#160;&#160;}<br>
+          &#160;&#160;&#160;&#160;}<br>
+          &#160;&#160;&#160;&#160;gcd = num1;<br>
+          &#160;&#160;}<br>
+          }<br>
+          flare "\nGCD: "~toString(gcd);<br>
+          heatDeath;
+        </code></div>
       </section>
     </main>
   </body>
