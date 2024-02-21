@@ -7,8 +7,8 @@ body {
   color: #fffffe;
   font-family: Georgia, 'Times New Roman', Times, serif;
   height: 100vh;
-  width: 100%;
   margin: 0;
+  width: 100%;
 }
 
 h1,
@@ -28,8 +28,8 @@ p {
 
 form {
   background-color: #b8c1ec;
-  border: #121629 solid 3px;
   border-radius: 8px;
+  border: #121629 solid 3px;
   color: #121629;
   margin: 0 auto;
   max-width: 500px;
@@ -54,13 +54,13 @@ label {
 input,
 select,
 textarea {
-  width: 100%;
-  min-height: 2.5em;
   background-color: #fffffe;
-  border: #121629 solid 3px;
-  padding: 0 0.5rem;
   border-radius: 6px;
+  border: #121629 solid 3px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  min-height: 2.5em;
+  padding: 0 0.5rem;
+  width: 100%;
 }
 
 select {

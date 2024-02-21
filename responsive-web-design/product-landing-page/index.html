@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Oriana Fawkes" />
+    <title>Product Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Pontano+Sans:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Logo_Blender.svg/2560px-Logo_Blender.svg.png"/>
+      <img id="header-img-no-text" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/2503px-Blender_logo_no_text.svg.png"/>
+      <nav id="nav-bar"> <!--The navbar should always be at the top of the viewport-->
+        <a class="nav-link" href="#New_Stuff">What's New</a><!--section 1-->
+        <a class="nav-link" href="#Features">Features</a><!--section 2-->
+        <a class="nav-link" href="#Download">Download</a><!--section 3-->
+      </nav>
+    </header>
+    <!--section 1-->
+    <section id="New_Stuff">
+      <h1>Blender</h1>
+      <p>"The Freedom to Create."</p>
+      <iframe id="video" src="https://www.youtube.com/embed/eoY1Mc70uTo" referrerpolicy="no-referrer" title="What's New in Blender"></iframe>
+    </section>
+    <!--section 2-->
+    <section id="Features">
+      <h1>Blender Features</h1>
+      <ul>
+        <li>
+          <h2>Comprehensive 3D Modeling</h2><p>Create stunning 3D models with precision and detail using Blender's comprehensive suite of modeling tools.</p>
+        </li>
+        <li>
+          <h2>Animation and Rigging</h2><p>Bring your creations to life with Blender's powerful animation and rigging tools. Create lifelike animations and complex character rigs with ease.</p>
+        </li>
+        <li>
+          <h2>Rendering and Lighting</h2><p>Achieve stunning visuals with Blender's advanced rendering and lighting tools. Render photorealistic scenes with Cycles or explore real-time rendering with Eevee.</p>
+        </li>
+        <li>
+          <h2>Simulation and Effects</h2><p>Explore dynamic simulations and effects with Blender's built-in physics engine. Create realistic simulations of fluids, smoke, fire, and more to enhance your scenes.</p>
+        </li>
+        <li>
+          <h2>Game Development</h2><p>Create immersive games and interactive experiences with Blender's game development features. Build and prototype game assets, design levels, and export projects to popular game engines like Unity and Unreal Engine.</p>
+        </li>
+      </ul>
+    </section>
+    <!--section 3-->
+    <section id="Download">
+      <h1>Download Blender</h1>
+      <p>Get Blender now from their <a href="https://www.blender.org/download/" rel="no-referrer">official website</a>.</p>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="email">Compulsory Email Form</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email address" required/>
+        <input id="submit" type="submit" value="Send Email">
+      </form>
+    </section>
+    <footer>Disclaimer: This webpage is created for educational and practice purposes. All product names, logos, and brands are property of their respective owners.
+    </footer>
+  </body>
+</html>
