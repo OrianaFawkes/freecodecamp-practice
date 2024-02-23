@@ -17,6 +17,10 @@ Welcome Nappers! This place is just a tiny spot I made to drop all my small proj
 - **Project 5:** [Personal Portfolio Webpage](responsive-web-design/personal-portfolio-webpage/)
 - *Favorite Practice Challenges:* [Nutrition Label](/responsive-web-design/nutrition-label/)
 
+### JavaScript Algorithms and Data Structures (Beta)
+
+- *Practice 1:* [Role Playing Game](/javascript-algorithms-and-data-structures/role-playing-game/)
+
 ### Scientific Computing with Python (Beta)
 
 - **Project 1:** [Arithmetic Formatter](/scientific-computing-with-python/projects/ArithmeticFormatter.py)
