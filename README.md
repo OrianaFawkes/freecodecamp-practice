@@ -20,6 +20,7 @@ Welcome Nappers! This place is just a tiny spot I made to drop all my small proj
 ### JavaScript Algorithms and Data Structures (Beta)
 
 - *Practice 1:* [Role Playing Game](/javascript-algorithms-and-data-structures/role-playing-game/)
+- *Practice 2:* [Calorie Counter](/javascript-algorithms-and-data-structures/calorie-counter/)
 
 ### Scientific Computing with Python (Beta)
 
