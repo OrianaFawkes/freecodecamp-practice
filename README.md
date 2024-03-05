@@ -22,6 +22,7 @@ Welcome Nappers! This place is just a tiny spot I made to drop all my small proj
 - *Practice 1:* [Role Playing Game](/javascript-algorithms-and-data-structures/role-playing-game/)
 - *Practice 2:* [Calorie Counter](/javascript-algorithms-and-data-structures/calorie-counter/)
 - *Practice 3:* [Music Player](/javascript-algorithms-and-data-structures/music-player/)
+- *Practice 4:* [Date Formatter](/javascript-algorithms-and-data-structures/date-formatter/)
 
 ### Scientific Computing with Python (Beta)
 
